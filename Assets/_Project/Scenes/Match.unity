@@ -4688,7 +4688,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 396.04968, y: 92.30541}
+  m_CellSize: {x: 395.77002, y: 92.41774}
   m_Spacing: {x: 6, y: 6}
   m_Constraint: 1
   m_ConstraintCount: 1
@@ -5844,6 +5844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPrefab: {fileID: 9078151817056614904, guid: 1495b4c00542368449d81ff6116c777b, type: 3}
+  stringVariable: {fileID: 11400000, guid: 58e84ca16a294724c8b2b291062cbe0b, type: 2}
 --- !u!1 &1210587936
 GameObject:
   m_ObjectHideFlags: 0

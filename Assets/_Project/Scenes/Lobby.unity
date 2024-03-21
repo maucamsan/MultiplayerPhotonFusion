@@ -1011,6 +1011,7 @@ GameObject:
   - component: {fileID: 1579403935}
   - component: {fileID: 1579403934}
   - component: {fileID: 1579403933}
+  - component: {fileID: 1579403936}
   m_Layer: 5
   m_Name: JoinButton
   m_TagString: Untagged
@@ -1120,6 +1121,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579403931}
   m_CullTransparentMesh: 1
+--- !u!114 &1579403936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579403931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6410601ef0ab64e42afaf1d070714764, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 151309436}
+  StringVariable: {fileID: 11400000, guid: 58e84ca16a294724c8b2b291062cbe0b, type: 2}
 --- !u!1 &1616706220
 GameObject:
   m_ObjectHideFlags: 0
