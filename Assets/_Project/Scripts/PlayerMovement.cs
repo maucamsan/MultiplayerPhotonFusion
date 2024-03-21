@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PlayerMovement : NetworkBehaviour
 {
+    public Camera Camera;
     private Vector3 _velocity;
     private bool _jumpPressed;
 
@@ -37,8 +38,8 @@ public class PlayerMovement : NetworkBehaviour
             _velocity = new Vector3(0, -1, 0);
         }
 
-        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * Runner.DeltaTime * PlayerSpeed;
-
+        Quaternion cameraRotationY = Quaternion.Euler(0, Camera.transform.rotation.eulerAngles.y, 0);
+        Vector3 move = cameraRotationY * new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * Runner.DeltaTime * PlayerSpeed;
         _velocity.y += GravityValue * Runner.DeltaTime;
         if (_jumpPressed && _controller.isGrounded)
         {
@@ -52,5 +53,14 @@ public class PlayerMovement : NetworkBehaviour
         }
 
         _jumpPressed = false;
+    }
+
+    public override void Spawned()
+    {
+        if (HasStateAuthority)
+        {
+            Camera = Camera.main;
+            Camera.GetComponent<FirstPersonCamera>().Target = transform;
+        }
     }
 }
