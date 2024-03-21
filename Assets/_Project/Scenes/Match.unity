@@ -4273,13 +4273,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RunnerPrefab: {fileID: 1198723736}
-  StartMode: 0
+  StartMode: 1
   AutoStartAs: 2
   AutoHideGUI: 1
   AutoClients: 1
   ClientStartDelay: 0.1
   ServerPort: 0
-  DefaultRoomName: 
+  DefaultRoomName: Match
   AlwaysShowStats: 0
   InitialScenePath: 
   _currentStage: 0
@@ -4688,7 +4688,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 395.77246, y: 92.41675}
+  m_CellSize: {x: 396.04968, y: 92.30541}
   m_Spacing: {x: 6, y: 6}
   m_Constraint: 1
   m_ConstraintCount: 1
